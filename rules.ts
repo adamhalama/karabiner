@@ -2,6 +2,15 @@ import fs from "fs";
 import { KarabinerRules } from "./types";
 import { createHyperSubLayers, app, open, rectangle, shell } from "./utils";
 
+const deviceCondition = {
+  type: "device_if",
+  identifiers: {
+    is_keyboard: true,
+    vendor_id: 76,
+    product_id: 615
+  }
+};
+
 const rules: KarabinerRules[] = [
   // Define the Hyper key itself
   {
@@ -367,6 +376,31 @@ const rules: KarabinerRules[] = [
   // },
 ];
 
+const swapDevices = [
+  { vendor_id: 76,   product_id: 615  },   // Apple Magic Keyboard
+  { vendor_id: 1452, product_id: 615  },   // Keychron etc.
+  { vendor_id: 1133, product_id: 45929 },  // Logitech MX Keys Mini
+];
+
+const devices = swapDevices.map(({ vendor_id, product_id }) => ({
+  identifiers: {
+    is_keyboard: true,
+    vendor_id,
+    product_id,
+  },
+  simple_modifications: [
+    {
+      from: { key_code: "grave_accent_and_tilde" },
+      to:   [{ key_code: "non_us_backslash" }],
+    },
+    {
+      from: { key_code: "non_us_backslash" },
+      to:   [{ key_code: "grave_accent_and_tilde" }],
+    },
+  ],
+}));
+
+
 fs.writeFileSync(
   "karabiner.json",
   JSON.stringify(
@@ -379,6 +413,11 @@ fs.writeFileSync(
           name: "Default",
           complex_modifications: {
             rules,
+          },
+          devices,
+          virtual_hid_keyboard: {
+            keyboard_type_v2: "ansi",
+            country_code: 0,
           },
         },
       ],
