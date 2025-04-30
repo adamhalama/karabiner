@@ -17,7 +17,7 @@ fs.writeFileSync(
       ],
     },
     null,
-    2,          //  pretty-print
+    2,
   ),
 );
 
