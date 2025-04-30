@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "tsm rules.ts",
+    "generate": "tsm generate.ts",
     "watch": "nodemon --exec yarn build -e ts"
   }
 }
