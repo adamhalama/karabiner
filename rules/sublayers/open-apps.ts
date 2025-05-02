@@ -12,6 +12,7 @@ export const openApps = {
     n: app("Obsidian"), // notes
     s: app("Spotify"),
     w: app("Texts"),
+    r: app("Miro"), // Mi'r'o
     l: open("raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"),
   },
 } as const;
