@@ -5,5 +5,7 @@ export const utils = {
     t: app("qBittorrent"), 
     d: app("qBittorrent"), // download
     p: app("Preview"), // preview, PDF
+    r: app("Windows App"), // remote desktop
+    w: app("Windows App"), // windows
   },
 } as const;
