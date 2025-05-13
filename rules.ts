@@ -2,6 +2,8 @@ import fs from "fs";
 import { KarabinerRules } from "./types";
 import { createHyperSubLayers, app, open, rectangle, shell } from "./utils";
 
+// LEGACY From maxstbr/karabiner-config
+// Keeping here as inspiration
 
 const rules: KarabinerRules[] = [
   // Define the Hyper key itself
