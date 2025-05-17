@@ -2314,6 +2314,30 @@
               {
                 "to": [
                   {
+                    "shell_command": "open raycast://extensions/pingdotgg/uploadthing/upload-from-clipboard"
+                  }
+                ],
+                "description": "Open raycast://extensions/pingdotgg/uploadthing/upload-from-clipboard",
+                "type": "basic",
+                "from": {
+                  "key_code": "u",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_r",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
                     "shell_command": "open raycast://extensions/raycast/raycast-focus/start-focus-session"
                   }
                 ],

@@ -3,7 +3,6 @@
  * The order here is the final order in karabiner.json.
  */
 export { hyperKeyRule } from "./hyperkey.ts";
-export { sublayerRules }  from "./sublayers.ts";
 export { minecraftRule }  from "./minecraft.ts";
 
 /** Gather them */
