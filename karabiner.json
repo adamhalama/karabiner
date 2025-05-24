@@ -2625,6 +2625,30 @@
                     "value": 1
                   }
                 ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "zsh -i -c '$HOME/bin/ask-ollama.sh'"
+                  }
+                ],
+                "description": "zsh -i -c '$HOME/bin/ask-ollama.sh'",
+                "type": "basic",
+                "from": {
+                  "key_code": "q",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_u",
+                    "value": 1
+                  }
+                ]
               }
             ]
           }

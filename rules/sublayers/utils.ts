@@ -1,4 +1,4 @@
-import { app } from "../../utils.ts";
+import { app, shell } from "../../utils.ts";
 
 export const utils = {
   u: {
@@ -11,5 +11,8 @@ export const utils = {
 
     i: app("IINA"), // IINA
     v: app("IINA"), // video
+
+    // shell command for calling an llm scrip called ask-ollama.sh
+    q: shell`zsh -i -c '$HOME/bin/ask-ollama.sh'`
   },
 } as const;
