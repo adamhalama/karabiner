@@ -13,6 +13,9 @@ export const utils = {
     v: app("IINA"), // video
 
     // shell command for calling an llm scrip called ask-ollama.sh
-    q: shell`zsh -i -c '$HOME/bin/ask-ollama.sh'`
+    q: shell`zsh -i -c '$HOME/bin/ask-ollama.sh'`,
+    c: shell`zsh -i -c '$HOME/bin/ask-ollama.sh'`, 
+
+    s: shell`zsh -i -c '$HOME/bin/ask-ollama.sh start'`,
   },
 } as const;
