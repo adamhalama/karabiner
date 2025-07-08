@@ -1014,11 +1014,32 @@
               {
                 "to": [
                   {
-                    "key_code": "q",
-                    "modifiers": [
-                      "right_control",
-                      "right_command"
+                    "apple_vendor_top_case_key_code": "illumination_up",
+                    "repeat": true
+                  }
+                ],
+                "type": "basic",
+                "from": {
+                  "key_code": "o",
+                  "modifiers": {
+                    "optional": [
+                      "any"
                     ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_s",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "apple_vendor_top_case_key_code": "illumination_down",
+                    "repeat": true
                   }
                 ],
                 "type": "basic",
