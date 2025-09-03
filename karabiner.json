@@ -751,10 +751,10 @@
               {
                 "to": [
                   {
-                    "shell_command": "open -a 'Texts.app'"
+                    "shell_command": "open -a 'WhatsApp.app'"
                   }
                 ],
-                "description": "Open -a 'Texts.app'",
+                "description": "Open -a 'WhatsApp.app'",
                 "type": "basic",
                 "from": {
                   "key_code": "w",

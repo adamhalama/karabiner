@@ -3,7 +3,7 @@ import { app } from "../../utils.ts";
 export const comms = {
   c: {
     m: app("Messenger"),
-    w: app("Texts"),          // WhatsApp → Texts
+    w: app("WhatsApp"),  
     // i: app("Texts"),          // Messages  → Texts
     d: app("legcord"),        // Discord
     t: app("Microsoft Teams"),
