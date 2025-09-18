@@ -14,8 +14,10 @@ export const openApps = {
     f: app("Finder"),
 
     s: app("Spotify"),
+    
     w: app("Texts"),
     r: app("Miro"), // Mi'r'o
-    l: open("raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"),
+    l: app("Notion"),
+    i: app("Notion"),
   },
 } as const;

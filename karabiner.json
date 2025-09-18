@@ -628,13 +628,37 @@
               {
                 "to": [
                   {
-                    "shell_command": "open raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink"
+                    "shell_command": "open -a 'Notion.app'"
                   }
                 ],
-                "description": "Open raycast://extensions/stellate/mxstbr-commands/open-mxs-is-shortlink",
+                "description": "Open -a 'Notion.app'",
                 "type": "basic",
                 "from": {
                   "key_code": "l",
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "conditions": [
+                  {
+                    "type": "variable_if",
+                    "name": "hyper_sublayer_o",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "to": [
+                  {
+                    "shell_command": "open -a 'Notion.app'"
+                  }
+                ],
+                "description": "Open -a 'Notion.app'",
+                "type": "basic",
+                "from": {
+                  "key_code": "i",
                   "modifiers": {
                     "optional": [
                       "any"
