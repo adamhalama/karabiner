@@ -2,7 +2,7 @@ import { app, open } from "../../utils.ts";
 
 export const openApps = {
   o: {
-    b: app("Zen browser"),
+    b: app("Zen"),
     e: app("Visual Studio Code"), // editor
     a: app("Cursor"), // cursor "ai"
     t: app("Ghostty"), // terminal
