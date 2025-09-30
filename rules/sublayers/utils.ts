@@ -10,7 +10,7 @@ export const utils = {
     w: app("Windows App"), // windows
 
     i: app("IINA"), // IINA
-    v: app("IINA"), // video
+    v: app("Surfshark"), // VPN
 
     // shell command for calling an llm scrip called ask-ollama.sh
     q: shell`zsh -i -c '$HOME/bin/ask-ollama.sh'`,
